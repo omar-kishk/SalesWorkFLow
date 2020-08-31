@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>Essam</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <ProjectGuid>{7f591802-0f66-4b41-9422-db18a53a3bee}</ProjectGuid>
+    <Name>BABSalesWorkflow</Name>
+    <RootNamespace>BABSalesWorkflow</RootNamespace>
+    <StartupObject>SalesTable (SalesTable.Essam)</StartupObject>
+    <StartupType>Form</StartupType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="AxClass\SalesTableEventHandler">
+      <SubType>Content</SubType>
+      <Name>SalesTableEventHandler</Name>
+      <Link>SalesTableEventHandler</Link>
+    </Content>
+    <Content Include="AxClass\SalesWorkflowApprovalEventHandler">
+      <SubType>Content</SubType>
+      <Name>SalesWorkflowApprovalEventHandler</Name>
+      <Link>SalesWorkflowApprovalEventHandler</Link>
+    </Content>
+    <Content Include="AxClass\SalesWorkflowApprovalResubmitActionMgr">
+      <SubType>Content</SubType>
+      <Name>SalesWorkflowApprovalResubmitActionMgr</Name>
+      <Link>SalesWorkflowApprovalResubmitActionMgr</Link>
+    </Content>
+    <Content Include="AxClass\SalesWorkflowTypeDocument">
+      <SubType>Content</SubType>
+      <Name>SalesWorkflowTypeDocument</Name>
+      <Link>SalesWorkflowTypeDocument</Link>
+    </Content>
+    <Content Include="AxClass\SalesWorkflowTypeEventHandler">
+      <SubType>Content</SubType>
+      <Name>SalesWorkflowTypeEventHandler</Name>
+      <Link>SalesWorkflowTypeEventHandler</Link>
+    </Content>
+    <Content Include="AxClass\SalesWorkflowTypeSubmitManager">
+      <SubType>Content</SubType>
+      <Name>SalesWorkflowTypeSubmitManager</Name>
+      <Link>SalesWorkflowTypeSubmitManager</Link>
+    </Content>
+    <Content Include="AxEnumExtension\SalesWorkflowStatus.Essam">
+      <SubType>Content</SubType>
+      <Name>SalesWorkflowStatus.Essam</Name>
+      <Link>SalesWorkflowStatus.Essam</Link>
+    </Content>
+    <Content Include="AxFormExtension\SalesTable.Essam">
+      <SubType>Content</SubType>
+      <Name>SalesTable.Essam</Name>
+      <Link>SalesTable.Essam</Link>
+    </Content>
+    <Content Include="AxForm\SalesWorkflowFrom">
+      <SubType>Content</SubType>
+      <Name>SalesWorkflowFrom</Name>
+      <Link>SalesWorkflowFrom</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\SalesWorkflowApprovalApprove">
+      <SubType>Content</SubType>
+      <Name>SalesWorkflowApprovalApprove</Name>
+      <Link>SalesWorkflowApprovalApprove</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\SalesWorkflowApprovalDelegateMenuItem">
+      <SubType>Content</SubType>
+      <Name>SalesWorkflowApprovalDelegateMenuItem</Name>
+      <Link>SalesWorkflowApprovalDelegateMenuItem</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\SalesWorkflowApprovalReject">
+      <SubType>Content</SubType>
+      <Name>SalesWorkflowApprovalReject</Name>
+      <Link>SalesWorkflowApprovalReject</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\SalesWorkflowApprovalRequestChange">
+      <SubType>Content</SubType>
+      <Name>SalesWorkflowApprovalRequestChange</Name>
+      <Link>SalesWorkflowApprovalRequestChange</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\SalesWorkflowApprovalResubmitMenuItem">
+      <SubType>Content</SubType>
+      <Name>SalesWorkflowApprovalResubmitMenuItem</Name>
+      <Link>SalesWorkflowApprovalResubmitMenuItem</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\SalesWorkflowTypeCancelMenuItem">
+      <SubType>Content</SubType>
+      <Name>SalesWorkflowTypeCancelMenuItem</Name>
+      <Link>SalesWorkflowTypeCancelMenuItem</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\SalesWorkflowTypeSubmitMenuItem">
+      <SubType>Content</SubType>
+      <Name>SalesWorkflowTypeSubmitMenuItem</Name>
+      <Link>SalesWorkflowTypeSubmitMenuItem</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\SalesWorkflowMenu">
+      <SubType>Content</SubType>
+      <Name>SalesWorkflowMenu</Name>
+      <Link>SalesWorkflowMenu</Link>
+    </Content>
+    <Content Include="AxQuery\SalesWorkflowQuery">
+      <SubType>Content</SubType>
+      <Name>SalesWorkflowQuery</Name>
+      <Link>SalesWorkflowQuery</Link>
+    </Content>
+    <Content Include="AxTableExtension\SalesTable.Essam">
+      <SubType>Content</SubType>
+      <Name>SalesTable.Essam</Name>
+      <Link>SalesTable.Essam</Link>
+    </Content>
+    <Content Include="AxTable\SalesWorkflowTable">
+      <SubType>Content</SubType>
+      <Name>SalesWorkflowTable</Name>
+      <Link>SalesWorkflowTable</Link>
+    </Content>
+    <Content Include="AxWorkflowApproval\SalesWorkflowApproval">
+      <SubType>Content</SubType>
+      <Name>SalesWorkflowApproval</Name>
+      <Link>SalesWorkflowApproval</Link>
+    </Content>
+    <Content Include="AxWorkflowCategory\SalesWorkflowCategory">
+      <SubType>Content</SubType>
+      <Name>SalesWorkflowCategory</Name>
+      <Link>SalesWorkflowCategory</Link>
+    </Content>
+    <Content Include="AxWorkflowTemplate\SalesWorkflowType">
+      <SubType>Content</SubType>
+      <Name>SalesWorkflowType</Name>
+      <Link>SalesWorkflowType</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>
